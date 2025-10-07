@@ -5,6 +5,47 @@ import "swiper/css";
 import "swiper/css/navigation";
 import "swiper/css/pagination";
 
+// import images so bundler includes them in production
+import card1 from "../assets/card1.jpeg";
+import card2 from "../assets/card2.jpeg";
+import card3 from "../assets/card3.jpeg";
+import card4 from "../assets/card4.jpeg";
+import card5 from "../assets/card5.jpeg";
+import card6 from "../assets/card6.jpeg";
+
+const slides = [
+  {
+    img: card6,
+    title: "Helping Special Students ",
+    desc: "Empowering children with disabilities to integrate freely.",
+  },
+  {
+    img: card2,
+    title: "With Many sub NGOs as a Part",
+    desc: "Supporting and guiding other NGOs in their initiatives.",
+  },
+  {
+    img: card3,
+    title: "Celebrating Independence Day with the Deservings",
+    desc: "Providing resources and facilities for disabled students.",
+  },
+  {
+    img: card4,
+    title: "Making Them Fell like one Family",
+    desc: "Bringing underprivileged children into a supportive environment.",
+  },
+  {
+    img: card5,
+    title: "Giving them Basic Education",
+    desc: "Providing speech therapy and communication workshops.",
+  },
+  {
+    img: card1,
+    title: "Providing Food for the Flood Victims",
+    desc: "Daily food distribution for homeless individuals.",
+  },
+];
+
 const Initiatives = () => {
   return (
     <section className="Initiatives bg-gradient-to-r from-[#011836] via-[#002754cc] to-[#002754cc] py-12 min-h-screen flex flex-col items-center">
@@ -29,114 +70,24 @@ const Initiatives = () => {
               1024: { slidesPerView: 3 },
             }}
           >
-            <SwiperSlide>
-              
-              <div className="relative h-[320px] md:h-[360px] w-full rounded-2xl overflow-hidden shadow-xl group">
-                <img
-                  src="src/assets/card6.jpeg"
-                  alt="Making Them Feel No Difference"
-                  className="h-full w-full object-cover transform group-hover:scale-105 transition-transform duration-500"
-                />
-                <div className="absolute bottom-0 left-0 w-full bg-gradient-to-t from-black/80 via-black/40 to-transparent p-4">
-                  <h2 className="text-yellow-400 text-lg md:text-xl font-bold">
-                    Making Them Feel No Difference
-                  </h2>
-                  <p className="text-gray-200 text-sm opacity-90">
-                    Empowering children with disabilities to integrate freely.
-                  </p>
+            {slides.map((s, idx) => (
+              <SwiperSlide key={idx}>
+                <div className="relative h-[320px] md:h-[360px] w-full rounded-2xl overflow-hidden shadow-xl group">
+                  <img
+                    src={s.img}
+                    alt={s.title}
+                    loading="lazy"
+                    className="h-full w-full object-cover transform group-hover:scale-105 transition-transform duration-500"
+                  />
+                  <div className="absolute bottom-0 left-0 w-full bg-gradient-to-t from-black/80 via-black/40 to-transparent p-4">
+                    <h2 className="text-yellow-400 text-lg md:text-xl font-bold">
+                      {s.title}
+                    </h2>
+                    <p className="text-gray-200 text-sm opacity-90">{s.desc}</p>
+                  </div>
                 </div>
-              </div>
-            </SwiperSlide>
-
-            <SwiperSlide>
-              <div className="relative h-[320px] md:h-[360px] w-full rounded-2xl overflow-hidden shadow-xl group">
-                <img
-                  src="src/assets/card2.jpeg"
-                  alt="Empowering Other NGOs"
-                  className="h-full w-full object-cover transform group-hover:scale-105 transition-transform duration-500"
-                />
-                <div className="absolute bottom-0 left-0 w-full bg-gradient-to-t from-black/80 via-black/40 to-transparent p-4">
-                  <h2 className="text-yellow-400 text-lg md:text-xl font-bold">
-                    Empowering Other NGOs
-                  </h2>
-                  <p className="text-gray-200 text-sm opacity-90">
-                    Supporting and guiding other NGOs in their initiatives.
-                  </p>
-                </div>
-              </div>
-            </SwiperSlide>
-
-            <SwiperSlide>
-              <div className="relative h-[320px] md:h-[360px] w-full rounded-2xl overflow-hidden shadow-xl group">
-                <img
-                  src="src/assets/card3.jpeg"
-                  alt="Support for Disabled Students"
-                  className="h-full w-full object-cover transform group-hover:scale-105 transition-transform duration-500"
-                />
-                <div className="absolute bottom-0 left-0 w-full bg-gradient-to-t from-black/80 via-black/40 to-transparent p-4">
-                  <h2 className="text-yellow-400 text-lg md:text-xl font-bold">
-                    Support for Disabled Students
-                  </h2>
-                  <p className="text-gray-200 text-sm opacity-90">
-                    Providing resources and facilities for disabled students.
-                  </p>
-                </div>
-              </div>
-            </SwiperSlide>
-
-            <SwiperSlide>
-              <div className="relative h-[320px] md:h-[360px] w-full rounded-2xl overflow-hidden shadow-xl group">
-                <img
-                  src="src/assets/card4.jpeg"
-                  alt="Making Them Part of Our Family"
-                  className="h-full w-full object-cover transform group-hover:scale-105 transition-transform duration-500"
-                />
-                <div className="absolute bottom-0 left-0 w-full bg-gradient-to-t from-black/80 via-black/40 to-transparent p-4">
-                  <h2 className="text-yellow-400 text-lg md:text-xl font-bold">
-                    Making Them Part of Our Family
-                  </h2>
-                  <p className="text-gray-200 text-sm opacity-90">
-                    Bringing underprivileged children into a supportive environment.
-                  </p>
-                </div>
-              </div>
-            </SwiperSlide>
-
-            <SwiperSlide>
-              <div className="relative h-[320px] md:h-[360px] w-full rounded-2xl overflow-hidden shadow-xl group">
-                <img
-                  src="src/assets/card5.jpeg"
-                  alt="Encouraging Them to Speak"
-                  className="h-full w-full object-cover transform group-hover:scale-105 transition-transform duration-500"
-                />
-                <div className="absolute bottom-0 left-0 w-full bg-gradient-to-t from-black/80 via-black/40 to-transparent p-4">
-                  <h2 className="text-yellow-400 text-lg md:text-xl font-bold">
-                    Encouraging Them to Speak
-                  </h2>
-                  <p className="text-gray-200 text-sm opacity-90">
-                    Providing speech therapy and communication workshops.
-                  </p>
-                </div>
-              </div>
-            </SwiperSlide>
-
-            <SwiperSlide>
-              <div className="relative h-[320px] md:h-[360px] w-full rounded-2xl overflow-hidden shadow-xl group">
-                <img
-                  src="/src/assets/card1.jpeg"
-                  alt="Providing Food for Shelterless People"
-                  className="h-full w-full object-cover transform group-hover:scale-105 transition-transform duration-500"
-                />
-                <div className="absolute bottom-0 left-0 w-full bg-gradient-to-t from-black/80 via-black/40 to-transparent p-4">
-                  <h2 className="text-yellow-400 text-lg md:text-xl font-bold">
-                    Providing Food for Shelterless People
-                  </h2>
-                  <p className="text-gray-200 text-sm opacity-90">
-                    Daily food distribution for homeless individuals.
-                  </p>
-                </div>
-              </div>
-            </SwiperSlide>
+              </SwiperSlide>
+            ))}
           </Swiper>
         </div>
       </div>
