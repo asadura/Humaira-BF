@@ -4,8 +4,8 @@ import Home from "./pages/Home";
 import About from "./pages/About";
 import Events from "./pages/Events";
 import Contact from "./pages/Contact";
-import Admin from "./pages/AdminPage";
-import Login from "./pages/Auth";
+// import Admin from "./pages/AdminPage";
+// import Login from "./pages/Auth";
 
 export default function App() {
   return (
@@ -17,8 +17,8 @@ export default function App() {
         <Route path="/about" element={<About />} />
         <Route path="/event" element={<Events />} />
         <Route path="/contact" element={<Contact />} />
-        <Route path="/admin" element={<Admin />} />
-        <Route path="/login" element={<Login />} />
+        {/* <Route path="/admin" element={<Admin />} />
+        <Route path="/login" element={<Login />} /> */}
         <Route path="*" element={<Navigate to="/" />} />
       </Routes>
     </BrowserRouter>

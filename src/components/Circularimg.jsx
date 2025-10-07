@@ -1,12 +1,10 @@
-import React, { useEffect, useState } from "react";
+import React, { useEffect, useState, useMemo } from "react";
 import { Swiper, SwiperSlide } from "swiper/react";
 import "swiper/css";
 import "swiper/css/navigation";
 import { Navigation } from "swiper/modules";
-
 import AOS from "aos";
 import "aos/dist/aos.css";
-
 import { motion } from "framer-motion";
 
 const data = [
@@ -25,26 +23,61 @@ export default function CircleSlider() {
     AOS.init({ duration: 800, easing: "ease-in-out", once: true });
   }, []);
 
+  const slides = useMemo(
+    () =>
+      data.map((item, index) => {
+        const isCenter = index === activeIndex;
+        return (
+          <SwiperSlide key={index} className="overflow-visible flex justify-center items-center">
+            <motion.div
+              className="flex flex-col items-center group overflow-visible"
+              animate={isCenter ? { scale: 1.15, y: -8 } : { scale: 1, y: 0 }}
+              style={{ zIndex: isCenter ? 10 : 1 }}
+              transition={{ type: "tween", duration: 0.3 }}
+            >
+              <motion.div
+                className="relative w-56 h-56 md:w-64 md:h-64 rounded-full overflow-hidden border-2 border-blue-600 dark:border-blue-400 shadow-md"
+                whileHover={{ scale: 1.08 }}
+                transition={{ duration: 0.2 }}
+              >
+                <img
+                  src={item.img}
+                  alt={item.title}
+                  className="w-full h-full object-cover rounded-full"
+                  loading="lazy"
+                />
+              </motion.div>
+
+              <motion.div
+                className="mt-5 bg-white dark:bg-gray-800 px-4 py-2 rounded-lg shadow-md w-56 md:w-64 text-center"
+                whileHover={{ scale: 1.05, boxShadow: "0 6px 15px rgba(59,130,246,0.15)" }}
+                transition={{ duration: 0.2 }}
+              >
+                <h3 className="text-lg md:text-xl font-bold text-blue-700 dark:text-blue-300">
+                  {item.title}
+                </h3>
+              </motion.div>
+            </motion.div>
+          </SwiperSlide>
+        );
+      }),
+    [activeIndex]
+  );
+
   return (
     <section className="flex flex-col items-center text-center py-28 px-6 bg-white dark:bg-gray-900 relative">
       <h1 className="text-5xl md:text-6xl font-extrabold mb-6 tracking-tight text-blue-600 dark:text-blue-400">
         Our Projects
       </h1>
-
       <p className="text-lg md:text-xl text-blue-900 dark:text-blue-300 max-w-3xl mb-20">
-        Join hands with{" "}
-        <span className="font-semibold text-blue-700 dark:text-blue-400">
-          HDF
-        </span>{" "}
-        to bring hope, empowerment, and lasting change to individuals and
-        communities in need.
+        Join hands with <span className="font-semibold text-blue-700 dark:text-blue-400">HDF</span> to bring hope, empowerment, and lasting change to individuals and communities in need.
       </p>
 
       <div className="relative w-full max-w-7xl overflow-visible">
         <Swiper
           spaceBetween={40}
           centeredSlides={true}
-          navigation={true} // manual navigation enabled
+          navigation={true}
           loop={true}
           modules={[Navigation]}
           className="w-full overflow-visible"
@@ -55,48 +88,7 @@ export default function CircleSlider() {
             1024: { slidesPerView: 2.5 },
           }}
         >
-          {data.map((item, index) => {
-            const isCenter = index === activeIndex;
-            return (
-              <SwiperSlide
-                key={index}
-                className="overflow-visible flex justify-center items-center"
-              >
-                <motion.div
-                  className="flex flex-col items-center group overflow-visible"
-                  animate={{ scale: isCenter ? 1.15 : 1, y: isCenter ? -8 : 0 }}
-                  style={{ zIndex: isCenter ? 10 : 1 }}
-                  transition={{ type: "spring", stiffness: 160, damping: 12 }}
-                >
-                  <motion.div
-                    className="relative w-56 h-56 md:w-64 md:h-64 rounded-full overflow-hidden border-2 border-blue-600 dark:border-blue-400 shadow-md"
-                    whileHover={{ scale: 1.12 }}
-                    transition={{ type: "spring", stiffness: 160, damping: 12 }}
-                  >
-                    <img
-                      src={item.img}
-                      alt={item.title}
-                      className="w-full h-full object-cover rounded-full relative z-10"
-                      loading="lazy"
-                    />
-                  </motion.div>
-
-                  <motion.div
-                    className="mt-5 bg-white dark:bg-gray-800 px-4 py-2 rounded-lg shadow-md w-56 md:w-64"
-                    whileHover={{
-                      scale: 1.08,
-                      boxShadow: "0 8px 20px rgba(59,130,246,0.15)",
-                    }}
-                    transition={{ duration: 0.25 }}
-                  >
-                    <h3 className="text-lg md:text-xl font-bold text-blue-700 dark:text-blue-300">
-                      {item.title}
-                    </h3>
-                  </motion.div>
-                </motion.div>
-              </SwiperSlide>
-            );
-          })}
+          {slides}
         </Swiper>
 
         <style jsx>{`

@@ -95,6 +95,7 @@ export default function Funds() {
         initial="hidden"
         animate={inView ? "show" : "hidden"}
       >
+        
         {stats.map((stat, idx) => (
           <motion.div
             key={idx}

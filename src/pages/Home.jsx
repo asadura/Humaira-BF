@@ -1,5 +1,5 @@
 import Navbar from "../components/Navbar";
-import space from "../assets/Space.mp4";
+import space from "../assets/vid.mp4";
 import Initiatives from "../components/Initiatives";
 import Footer from "../components/Footer";
 import Landing from "../components/Landing";
