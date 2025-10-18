@@ -92,7 +92,7 @@ function ContactForm() {
             </div>
             <div className="flex items-center gap-3">
               <Mail className="w-6 h-6 text-yellow-400" />
-              <span>thehdfinternational@gmail.com</span>
+              <span>admin@hdfintl.com</span>
             </div>
             <div className="flex items-center gap-3">
               <Instagram className="w-6 h-6 text-yellow-400" />
