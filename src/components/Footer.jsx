@@ -1,62 +1,57 @@
-// src/components/Footer.jsx
-import React from "react";
-import { Mail, Phone, MapPin, Twitter, Facebook, Linkedin } from "lucide-react";
+// Footer.jsx
+import { FaFacebookF, FaInstagram, FaYoutube, FaLinkedinIn } from "react-icons/fa";
+import { FaXTwitter } from "react-icons/fa6";
 
 export default function Footer() {
   return (
-    <footer className="bg-gray-900 text-gray-200 py-8">
-      <div className="container mx-auto px-4 grid grid-cols-1 md:grid-cols-3 gap-8">
+    <footer className="bg-[#40acea] text-white">
+      {/* Top Section */}
+      <div className="max-w-6xl mx-auto px-6 py-10 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
         
-        {/* About Section */}
+        {/* Contact */}
         <div>
-          <h4 className="font-semibold text-lg mb-3">About</h4>
-          <p className="text-sm leading-relaxed text-gray-400">
-            HDF International — supporting our mission and community. 
-            Thank you for being part of the journey.
-          </p>
-        </div>
-
-        {/* Contact Section */}
-        <div>
-          <h4 className="font-semibold text-lg mb-3">Contact</h4>
-          <ul className="text-sm space-y-2 text-gray-400">
-            <li className="flex items-center gap-2">
-              <Mail size={16} />
-              <a href="mailto:admin@hdfintl.com" className="hover:text-white transition">
-                admin@hdfintl.com
-              </a>
-            </li>
-            <li className="flex items-center gap-2">
-              <Phone size={16} />
-              <span>+61 2 1234 5678</span>
-            </li>
-            <li className="flex items-center gap-2">
-              <MapPin size={16} />
-              <span>Suite 100, Example Street, Sydney</span>
-            </li>
+          <h2 className="text-yellow-400 font-bold text-lg mb-4">Contact</h2>
+          <ul className="space-y-2 text-gray-100 text-sm">
+            <li>Malbern, Australia</li>
+            <li>HDF.vitswd@vit.edu</li>
+            <li>+61 431 457 457</li>
+            <li>+61 411 570 985</li>
+            
           </ul>
         </div>
 
-        {/* Social Links Section */}
+        {/* Quick Links */}
         <div>
-          <h4 className="font-semibold text-lg mb-3">Follow Us</h4>
-          <div className="flex items-center gap-4">
-            <a href="#" className="hover:text-blue-400 transition">
-              <Twitter size={18} />
-            </a>
-            <a href="#" className="hover:text-blue-600 transition">
-              <Facebook size={18} />
-            </a>
-            <a href="#" className="hover:text-blue-500 transition">
-              <Linkedin size={18} />
-            </a>
-          </div>
+          <h2 className="text-yellow-400 font-bold text-lg mb-4">Quick Links</h2>
+          <ul className="space-y-2 text-sm">
+            <li><a className="hover:text-yellow-400 text-white text-lg">About</a></li>
+            <li><a className="hover:text-yellow-400 text-white text-lg">Contact</a></li>
+            <li><a className="hover:text-yellow-400 text-white text-lg">Events</a></li>
+          </ul>
+        </div>
+
+        {/* Logo Section */}
+        <div className="md:col-span-2 flex flex-col items-center justify-center text-center">
+          <img 
+            src="/Logo-removebg-preview.png"   // put your logo inside the "public" folder
+            alt="NGO Logo" 
+            className="h-32 w-32 mb-3 drop-shadow-lg"
+          />
+          <p className="text-gray-100 text-lg">Working together for a better tomorrow</p>
         </div>
       </div>
 
-      {/* Bottom Line */}
-      <div className="mt-8 border-t border-gray-800 pt-4 text-center text-xs text-gray-500">
-        © {new Date().getFullYear()} HDF International. All rights reserved.
+      {/* Bottom Section */}
+      <div className="border-t border-gray-100 py-4 flex flex-col md:flex-row items-center justify-between max-w-6xl mx-auto px-6 text-sm text-gray-400">
+        <p className='text-black font-bold text-lg'>&copy; 2024 THE HDF NGO. All Rights Reserved.</p>
+        
+        {/* Social Links */}
+        <div className="flex gap-3 mt-3 md:mt-0">
+          <a  className="hover:text-yellow-400 text-black font-bold text-lg"><FaXTwitter /></a>
+          <a  className="hover:text-yellow-400 text-black font-bold text-lg"><FaFacebookF /></a>
+          <a href="https://www.instagram.com/hdfinternational/" className="hover:text-yellow-400 text-black font-bold text-lg"><FaInstagram /></a>
+          <a  className="hover:text-yellow-400 text-black font-bold text-lg"><FaYoutube /></a>
+        </div>
       </div>
     </footer>
   );
