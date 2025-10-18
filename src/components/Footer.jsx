@@ -13,9 +13,9 @@ export default function Footer() {
           <h2 className="text-yellow-400 font-bold text-lg mb-4">Contact</h2>
           <ul className="space-y-2 text-gray-100 text-sm">
             <li>Malbern, Australia</li>
-            <li>HDF.vitswd@vit.edu</li>
+            <li>admin@hdfintl.comli>
             <li>+61 431 457 457</li>
-            <li>+61 411 570 985</li>
+            <li>+92 305 463 8070</li>
             
           </ul>
         </div>
@@ -47,10 +47,10 @@ export default function Footer() {
         
         {/* Social Links */}
         <div className="flex gap-3 mt-3 md:mt-0">
-          <a href="https://twitter.com/vit_socials" className="hover:text-yellow-400 text-black font-bold text-lg"><FaXTwitter /></a>
-          <a href="https://www.facebook.com/vitsocials" className="hover:text-yellow-400 text-black font-bold text-lg"><FaFacebookF /></a>
-          <a href="https://www.instagram.com/vitsocials/" className="hover:text-yellow-400 text-black font-bold text-lg"><FaInstagram /></a>
-          <a href="https://www.youtube.com/channel/UCJnaNm8Ns08rUIhsdFM2fhA" className="hover:text-yellow-400 text-black font-bold text-lg"><FaYoutube /></a>
+          <a  className="hover:text-yellow-400 text-black font-bold text-lg"><FaXTwitter /></a>
+          <a href="https://www.facebook.com/profile.php?id=61580026329438&mibextid=wwXIfr&rdid=nxn5Vxjxfq1uUMrZ&share_url=https%3A%2F%2Fwww.facebook.com%2Fshare%2F1GqChFMEqq%2F%3Fmibextid%3DwwXIfr#" className="hover:text-yellow-400 text-black font-bold text-lg"><FaFacebookF /></a>
+          <a href="https://www.instagram.com/hdfinternational/" className="hover:text-yellow-400 text-black font-bold text-lg"><FaInstagram /></a>
+          <a  className="hover:text-yellow-400 text-black font-bold text-lg"><FaYoutube /></a>
         </div>
       </div>
     </footer>
