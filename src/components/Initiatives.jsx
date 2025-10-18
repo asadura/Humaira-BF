@@ -36,7 +36,7 @@ const slides = [
   },
   {
     img: card5,
-    title: "Giving them Basic Education",
+    title: "Providing Basic Education",
     desc: "Providing speech therapy and communication workshops.",
   },
   {
