@@ -11,7 +11,7 @@ export default function Footer() {
         <div>
           <h2 className="text-yellow-400 font-bold text-lg mb-4">Contact</h2>
           <ul className="space-y-2 text-gray-100 text-sm">
-            <li>Lahore, Pakistan/Sydney, Australia</li>
+            <li>Lahore, Pakistan / Sydney, Australia</li>
             <li>admin@hdfintl.com</li>
             <li>+61 431 457 457</li>
             <li>+92 305 463 8070</li>
