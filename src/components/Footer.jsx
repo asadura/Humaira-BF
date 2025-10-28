@@ -1,6 +1,5 @@
 // Footer.jsx
 import { FaFacebookF, FaInstagram, FaYoutube, FaLinkedinIn } from "react-icons/fa";
-import { FaXTwitter } from "react-icons/fa6";
 
 export default function Footer() {
   return (
@@ -12,7 +11,7 @@ export default function Footer() {
         <div>
           <h2 className="text-yellow-400 font-bold text-lg mb-4">Contact</h2>
           <ul className="space-y-2 text-gray-100 text-sm">
-            <li>Malbern, Australia</li>
+            <li>Lahore, Pakistan/Sydney, Australia</li>
             <li>admin@hdfintl.com</li>
             <li>+61 431 457 457</li>
             <li>+92 305 463 8070</li>
@@ -47,10 +46,10 @@ export default function Footer() {
         
         {/* Social Links */}
         <div className="flex gap-3 mt-3 md:mt-0">
-          <a  className="hover:text-yellow-400 text-black font-bold text-lg"><FaXTwitter /></a>
-          <a  className="hover:text-yellow-400 text-black font-bold text-lg"><FaFacebookF /></a>
+       
+          <a href="https://www.facebook.com/share/1AS3CRpkLZ/?mibextid=wwXIfr/" className="hover:text-yellow-400 text-black font-bold text-lg"><FaFacebookF /></a>
           <a href="https://www.instagram.com/hdfinternational/" className="hover:text-yellow-400 text-black font-bold text-lg"><FaInstagram /></a>
-          <a  className="hover:text-yellow-400 text-black font-bold text-lg"><FaYoutube /></a>
+          <a  href="https://youtube.com/@humairadevelopmentfoundation?si=5Qqn9yRVfM8Y4R07/" className="hover:text-yellow-400 text-black font-bold text-lg"><FaYoutube /></a>
         </div>
       </div>
     </footer>
