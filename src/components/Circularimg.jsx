@@ -8,12 +8,12 @@ import "aos/dist/aos.css";
 import { motion } from "framer-motion";
 
 const data = [
-  { img: "/cir1.jpeg", title: "Making Them Feel No Difference" },
-  { img: "/cir2.jpeg", title: "Empowering Other NGOs" },
-  { img: "/cir3.jpeg", title: "Support for Disabled Students" },
-  { img: "/cir4.jpeg", title: "Making Them a Part of Our Family" },
-  { img: "/cir5.jpeg", title: "Encouraging Them to Speak" },
-  { img: "/verticlechild2.jpeg", title: "Providing ShelterLess people With Food" },
+  { img: "/cir1.jpeg", title: "Orphanage Education Program" },
+
+  { img: "/cir3.jpeg", title: "Specialised Special Needs Programs" },
+
+  { img: "/cir5.jpeg", title: "Women Empowerment" },
+  { img: "/verticlechild2.jpeg", title: "Weekly Food Drives" },
 ];
 
 export default function CircleSlider() {
