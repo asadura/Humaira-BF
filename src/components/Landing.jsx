@@ -29,8 +29,7 @@ export default function Landing() {
           {/* Caption 3 */}
           <div className="max-w-md">
             <p className="text-base md:text-lg font-light italic text-white">
-              Bring out the change in society by spreading hands to help the
-              unprivileged children and other backward communities.
+            At Humaira Development Foundation, we are dedicated to creating meaningful social change by empowering underprivileged children and marginalized communities. Through education, skill development, and community-based initiatives, we strive to break the cycle of poverty and build a more equitable and compassionate society where every individual has the opportunity to thrive.
             </p>
           </div>
 
