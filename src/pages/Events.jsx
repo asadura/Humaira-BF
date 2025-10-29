@@ -58,7 +58,7 @@ export default function About() {
             `}
             style={{ animationDelay: "0.3s" }}
           >
-            Events
+            Projects
           </h1>
 
           {/* Breadcrumb with staggered animation */}
