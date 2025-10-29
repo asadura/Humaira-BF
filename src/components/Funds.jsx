@@ -15,12 +15,12 @@ export default function Funds() {
         <path d="M16 11c1.654 0..." />
       </svg>
     )},
-    { value: 100000, label: "Our Goal", suffix: "$", icon: (
+    { value: 100000, label: "Our Goal", prefix: "$", icon: (
       <svg xmlns="http://www.w3.org/2000/svg" className="w-12 md:w-16 h-12 md:h-16 text-yellow-400/90 drop-shadow-[0_0_16px_rgba(255,255,255,0.9)]" fill="currentColor" viewBox="0 0 24 24">
         <path d="M12 2a10 10..." />
       </svg>
     )},
-    { value: 5000, label: "Raised", suffix: "$", icon: (
+    { value: 5000, label: "Raised", prefix: "$", icon: (
       <svg xmlns="http://www.w3.org/2000/svg" className="w-12 md:w-16 h-12 md:h-16 text-yellow-400/90 drop-shadow-[0_0_16px_rgba(255,255,255,0.9)]" fill="currentColor" viewBox="0 0 24 24">
         <path d="M20 6h-8V4..." />
       </svg>
