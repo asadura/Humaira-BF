@@ -190,7 +190,7 @@ export default function Navbar() {
             ))}
 
 <div className="px-6 py-4 mt-4 rounded-xl bg-transparent border border-white/20 shadow-md backdrop-blur-sm">
-  <h3 className="text-lg font-semibold text-blue-500 mb-3">
+  <h3 className="text-lg font-semibold text-yellow-300 text-bold mb-3">
      Get in Touch
   </h3>
   <div className="space-y-2 text-[15px]">
@@ -198,14 +198,14 @@ export default function Navbar() {
       <span className="bg-[color:var(--brand-primary)]/15 text-[color:var(--brand-primary)] px-2 py-1 rounded-lg text-md font-medium">
         Phone
       </span>
-      61-4314574-57
+      +92 305 4638070
     </p>
     <p className="flex items-center gap-2 text-white hover:text-[color:var(--brand-primary)] transition-colors duration-200">
       <span className="bg-blue-800/15  text-[color:var(--brand-primary)] px-2 py-1 rounded-lg text-md font-medium">
         Email
       </span>
       <a
-        className=" text-yellow-300"
+        className=" text-white"
       >
         admin@hdfintl <br />.com
       </a>
