@@ -9,7 +9,7 @@ import { motion } from "framer-motion";
 
 const data = [
   { img: "/cir1.jpeg", title: "Orphanage Education Program" },
-  { img: "/cir3.jpeg", title: "Specialised Special Needs Programs" },
+  { img: "/cir3.jpeg", title: "Special Needs Programs" },
   { img: "/cir5.jpeg", title: "Women Empowerment" },
   { img: "/verticlechild2.jpeg", title: "Weekly Food Drives" },
   { img: "/cir3.jpeg", title: "Specialised Special Needs Programs" },
