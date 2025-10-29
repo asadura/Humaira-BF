@@ -5,7 +5,6 @@ import "swiper/css";
 import "swiper/css/navigation";
 import "swiper/css/pagination";
 
-// import images so bundler includes them in production
 import card1 from "../assets/card1.jpeg";
 import card2 from "../assets/card2.jpeg";
 import card3 from "../assets/card3.jpeg";
@@ -31,12 +30,12 @@ const slides = [
   },
   {
     img: card4,
-    title: "Making Them Feel like one Family",
+    title: "Making Them Fell like one Family",
     desc: "Bringing underprivileged children into a supportive environment.",
   },
   {
     img: card5,
-    title: "Providing Basic Education",
+    title: "Giving them Basic Education",
     desc: "Providing speech therapy and communication workshops.",
   },
   {
@@ -48,31 +47,31 @@ const slides = [
 
 const Initiatives = () => {
   return (
-    <section className="Initiatives bg-gradient-to-r from-[#011836] via-[#002754cc] to-[#002754cc] py-12 min-h-screen flex flex-col items-center">
+    <section className="Initiatives bg-gradient-to-r from-[#011836] via-[#002754cc] to-[#002754cc] py-12 flex flex-col items-center">
       <div className="w-full max-w-7xl px-4 flex flex-col items-center">
-        <h1 className="font-raleway font-bold text-[2.5rem] sm:text-[4rem] pb-4 text-gray-200 text-center">
+        <h1 className="font-raleway font-bold text-[2.2rem] sm:text-[3.5rem] pb-4 text-gray-200 text-center">
           <span className="hidden sm:inline">OUR </span>INITIATIVES
         </h1>
 
-        <div className="initiative-cards w-full mt-10">
+        <div className="initiative-cards w-full mt-8 sm:mt-10">
           <Swiper
             modules={[Navigation, Pagination, Autoplay]}
             navigation
             pagination={{ clickable: true }}
-            autoplay={{ delay: 3000, disableOnInteraction: false }}
+            autoplay={{ delay: 1000, disableOnInteraction: false }}
             slidesPerView={3}
             spaceBetween={30}
             loop={true}
-            className="h-[400px]"
+            className="!h-auto pb-8"
             breakpoints={{
-              320: { slidesPerView: 1 },
-              768: { slidesPerView: 2 },
-              1024: { slidesPerView: 3 },
+              320: { slidesPerView: 1, spaceBetween: 20 },
+              768: { slidesPerView: 2, spaceBetween: 25 },
+              1024: { slidesPerView: 3, spaceBetween: 30 },
             }}
           >
             {slides.map((s, idx) => (
               <SwiperSlide key={idx}>
-                <div className="relative h-[320px] md:h-[360px] w-full rounded-2xl overflow-hidden shadow-xl group">
+                <div className="relative w-full h-[260px] sm:h-[300px] rounded-2xl overflow-hidden shadow-xl group">
                   <img
                     src={s.img}
                     alt={s.title}
@@ -80,7 +79,7 @@ const Initiatives = () => {
                     className="h-full w-full object-cover transform group-hover:scale-105 transition-transform duration-500"
                   />
                   <div className="absolute bottom-0 left-0 w-full bg-gradient-to-t from-black/80 via-black/40 to-transparent p-4">
-                    <h2 className="text-yellow-400 text-lg md:text-xl font-bold">
+                    <h2 className="text-blue-400 text-lg md:text-xl font-bold">
                       {s.title}
                     </h2>
                     <p className="text-gray-200 text-sm opacity-90">{s.desc}</p>
