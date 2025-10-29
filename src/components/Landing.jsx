@@ -12,7 +12,7 @@ export default function Landing() {
         <div className="flex items-center gap-3">
           <hr className="w-2/5 border border-yellow-400" />
           <h4 className="text-lg md:text-xl italic text-yellowgreen">
-            WE ARE HDF NGO
+            Humaira Development Foundation 
           </h4>
         </div>
 
