@@ -31,7 +31,7 @@ const slides = [
   },
   {
     img: card4,
-    title: "Making Them Fell like one Family",
+    title: "Making Them Feel like one Family",
     desc: "Bringing underprivileged children into a supportive environment.",
   },
   {
