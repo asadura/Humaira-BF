@@ -33,11 +33,11 @@ export default function Home() {
           {/* NGO Title */}
           <div className="animate-fadeInUp max-w-2xl text-center md:text-left md:ml-36">
             <h1 className="font-extrabold leading-tight">
-              <span className="block text-blue-400 drop-shadow-lg text-5xl sm:text-6xl md:text-7xl lg:text-8xl xl:text-9xl animate-slideInLeft">
-                FEED
+              <span className="block mt-12 text-blue-400 drop-shadow-lg text-5xl sm:text-6xl md:text-7xl lg:text-8xl xl:text-9xl animate-slideInLeft">
+                SECURE
               </span>
               <span className="block mt-2 text-white text-2xl sm:text-3xl md:text-4xl lg:text-5xl xl:text-6xl animate-slideInLeftDelay">
-                AN ORPHAN
+                YOUR AKHIRA
               </span>
             </h1>
           </div>
