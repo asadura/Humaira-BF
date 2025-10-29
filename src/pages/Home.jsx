@@ -31,13 +31,13 @@ export default function Home() {
         {/* Content */}
         <div className="absolute inset-0 flex flex-col items-center justify-center md:flex-row md:justify-between px-4 sm:px-8 md:px-16 gap-8 md:gap-12">
           {/* NGO Title */}
-          <div className="animate-fadeInUp max-w-2xl text-center md:text-left md:ml-6">
+          <div className="animate-fadeInUp max-w-2xl text-center md:text-left md:ml-36">
             <h1 className="font-extrabold leading-tight">
               <span className="block text-blue-400 drop-shadow-lg text-5xl sm:text-6xl md:text-7xl lg:text-8xl xl:text-9xl animate-slideInLeft">
-                Humaira
+                FEED
               </span>
               <span className="block mt-2 text-white text-2xl sm:text-3xl md:text-4xl lg:text-5xl xl:text-6xl animate-slideInLeftDelay">
-                Development Foundation
+                AN ORPHAN
               </span>
             </h1>
           </div>
