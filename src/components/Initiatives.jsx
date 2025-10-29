@@ -15,8 +15,8 @@ import card6 from "../assets/card6.jpeg";
 const slides = [
   {
     img: card6,
-    title: "Gumman IN",
-    desc: "Empowering Various NGOS",
+    title: "Gumman Initiative",
+    desc: "Empowering student led NGOS",
   },
 ];
 
