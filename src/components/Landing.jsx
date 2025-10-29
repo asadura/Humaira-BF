@@ -22,7 +22,7 @@ export default function Landing() {
           <div>
             <p className="text-2xl md:text-5xl font-bold uppercase text-white">
               At <span className="text-yellow-400">HDF,</span> we work towards
-              the betterment of our <span className="text-yellow-400">world</span>
+              the betterment of our <span className="text-yellow-400">Society</span>
             </p>
           </div>
 
