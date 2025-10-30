@@ -92,7 +92,7 @@ function ContactForm() {
             </div>
             <div className="flex items-center gap-3">
               <Mail className="w-6 h-6 text-yellow-400" />
-              <span>admin@hdfintl.com</span>
+              <span>thehdfinternational@gmail.com</span>
             </div>
             <div className="flex items-center gap-3">
               <Instagram className="w-6 h-6 text-yellow-400" />
@@ -123,9 +123,9 @@ function ContactForm() {
                 peer-not-placeholder-shown:bg-black peer-not-placeholder-shown:text-black"
               />
               <label htmlFor="name"
-                className="absolute left-4 top-2 text-red-500 text-sm transition-all 
+                className="absolute left-4 top-2 text-white text-sm transition-all 
                 peer-placeholder-shown:top-5 peer-placeholder-shown:text-gray-400
-                peer-focus:top-2 peer-focus:text-red-500 peer-not-placeholder-shown:text-red-500">
+                peer-focus:top-2 peer-focus:text-white peer-not-placeholder-shown:text-white">
                 Name
               </label>
               <p className="text-white text-sm mt-1">{errors.name}</p>
@@ -145,9 +145,9 @@ function ContactForm() {
                 peer-not-placeholder-shown:bg-black peer-not-placeholder-shown:text-black"
               />
               <label htmlFor="email"
-                className="absolute left-4 top-2 text-red-500 text-sm transition-all 
+                className="absolute left-4 top-2 text-white text-sm transition-all 
                 peer-placeholder-shown:top-5 peer-placeholder-shown:text-gray-400
-                peer-focus:top-2 peer-focus:text-red-500 peer-not-placeholder-shown:text-red-500">
+                peer-focus:top-2 peer-focus:text-white peer-not-placeholder-shown:text-white">
                 Email
               </label>
               <p className="text-white text-sm mt-1">{errors.email}</p>
@@ -167,9 +167,9 @@ function ContactForm() {
                 peer-not-placeholder-shown:bg-black peer-not-placeholder-shown:text-black"
               />
               <label htmlFor="message"
-                className="absolute left-4 top-2 text-red-500 text-sm transition-all 
+                className="absolute left-4 top-2 text-white text-sm transition-all 
                 peer-placeholder-shown:top-5 peer-placeholder-shown:text-gray-400
-                peer-focus:top-2 peer-focus:text-red-500 peer-not-placeholder-shown:text-red-500">
+                peer-focus:top-2 peer-focus:text-white peer-not-placeholder-shown:text-white">
                 Message
               </label>
               <p className="text-white text-sm mt-1">{errors.message}</p>
