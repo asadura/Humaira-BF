@@ -54,7 +54,7 @@ export default function About() {
           <h1
             className={`text-yellow-400 text-5xl md:text-7xl font-extrabold tracking-wide inline-block pb-4 relative
               after:absolute after:w-28 after:h-1 after:bg-yellow-400 after:left-1/2 after:-translate-x-1/2 after:bottom-0
-              drop-shadow-lg select-none font-serif
+              drop-shadow-lg select-none 
               ${animate ? "animate-fadeInUp" : "opacity-0"}
             `}
             style={{ animationDelay: "0.3s" }}
@@ -68,7 +68,7 @@ export default function About() {
               ${animate ? "animate-fadeInUp" : "opacity-0"}
             `}
             style={{ animationDelay: "0.7s" }}
-          ><h3 className="text-yellow-300 font-mono" >Connect with us and share Our Goal</h3>
+          ><h3 className="text-yellow-300 " >Connect with us and share Our Goal</h3>
           </nav>
         </div>
       </div>
