@@ -128,7 +128,7 @@ function ContactForm() {
                 peer-focus:top-2 peer-focus:text-red-500 peer-not-placeholder-shown:text-red-500">
                 Name
               </label>
-              <p className="text-red-500 text-sm mt-1">{errors.name}</p>
+              <p className="text-white text-sm mt-1">{errors.name}</p>
             </motion.div>
 
             <motion.div variants={fadeInUp} className="relative group">
@@ -150,7 +150,7 @@ function ContactForm() {
                 peer-focus:top-2 peer-focus:text-red-500 peer-not-placeholder-shown:text-red-500">
                 Email
               </label>
-              <p className="text-red-500 text-sm mt-1">{errors.email}</p>
+              <p className="text-white text-sm mt-1">{errors.email}</p>
             </motion.div>
 
             <motion.div variants={fadeInUp} className="relative group">
@@ -172,7 +172,7 @@ function ContactForm() {
                 peer-focus:top-2 peer-focus:text-red-500 peer-not-placeholder-shown:text-red-500">
                 Message
               </label>
-              <p className="text-red-500 text-sm mt-1">{errors.message}</p>
+              <p className="text-white text-sm mt-1">{errors.message}</p>
             </motion.div>
 
             <motion.button
