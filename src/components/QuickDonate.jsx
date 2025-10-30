@@ -144,7 +144,7 @@ export default function QuickDonate({ showInline = false, user = null }) {
 
       {/* ✅ User Info */}
       <p className="text-center text-blue-300 mb-4">
-        Feed the Hungry{" "}
+        “The believer’s shade on the Day of Resurrection will be his charity.” (Al-Tirmidhi){" "}
         <span className="font-bold">{user?.displayName || ""}</span>
       </p>
 
