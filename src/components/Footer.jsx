@@ -19,15 +19,7 @@ export default function Footer() {
           </ul>
         </div>
 
-        {/* Quick Links */}
-        <div>
-          <h2 className="text-yellow-400 font-bold text-lg mb-4">Quick Links</h2>
-          <ul className="space-y-2 text-sm">
-            <li><a className="hover:text-yellow-400 text-white text-lg">About</a></li>
-            <li><a className="hover:text-yellow-400 text-white text-lg">Contact</a></li>
-            <li><a className="hover:text-yellow-400 text-white text-lg">Events</a></li>
-          </ul>
-        </div>
+   
 
         {/* Logo Section */}
         <div className="md:col-span-2 flex flex-col items-center justify-center text-center">
@@ -42,7 +34,8 @@ export default function Footer() {
 
       {/* Bottom Section */}
       <div className="border-t border-gray-100 py-4 flex flex-col md:flex-row items-center justify-between max-w-6xl mx-auto px-6 text-sm text-gray-400">
-        <p className='text-black font-bold text-lg'>&copy; 2024 THE HDF NGO. All Rights Reserved.</p>
+        <p className='text-black font-bold text-lg'>&copy; 2025 Humaira
+Development Foundation. All Rights Reserved.</p>
         
         {/* Social Links */}
         <div className="flex gap-3 mt-3 md:mt-0">
