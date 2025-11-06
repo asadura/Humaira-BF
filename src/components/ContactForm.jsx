@@ -85,7 +85,7 @@ function ContactForm() {
           
             <div className="flex items-center gap-3">
               <Phone className="w-6 h-6 text-yellow-400" />
-              <span>61-4314574-57</span>
+              <span>+92 305 463 8070</span>
             </div>
             <div className="flex items-center gap-3">
               <Mail className="w-6 h-6 text-yellow-400" />
