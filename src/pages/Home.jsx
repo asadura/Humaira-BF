@@ -34,15 +34,18 @@ export default function Home() {
     {/* NGO Title */}
     <div className="animate-fadeInUp max-w-2xl text-center md:text-left md:ml-36">
       <h1 className="font-extrabold leading-tight">
-        <span className="block sm:-mt-1 mt-24 text-blue-400 drop-shadow-lg text-5xl sm:text-6xl md:text-7xl lg:text-8xl xl:text-9xl animate-slideInLeft">
+        <span className="block sm:-mt-1 mt-36 text-blue-400 drop-shadow-lg text-5xl sm:text-6xl md:text-7xl lg:text-8xl xl:text-9xl animate-slideInLeft">
           SECURE
         </span>
         <span className="block mt-2 text-white text-2xl sm:text-3xl md:text-4xl lg:text-5xl xl:text-6xl animate-slideInLeftDelay">
           YOUR AKHIRA
         </span>
-      </h1>
+      </h1>     
+       <p className="text-center text-blue-300  sm:mt-4">
+        “The believer’s shade on the Day of Resurrection will be his charity.” (Al-Tirmidhi){" "}
+        <span className="font-bold"></span>
+      </p>
     </div>
-
     {/* Quick Donate Box */}
     <div className="w-full max-w-sm sm:max-w-md mx-auto md:mx-0 md:mr-12 animate-slideInRightDelay">
       <QuickDonate showInline />
