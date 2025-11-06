@@ -35,12 +35,7 @@ export default function Landing() {
 
           {/* Buttons */}
           <div className="flex gap-4 pt-4">
-            <button
-              onClick={() => navigate("/about")}
-              className="px-6 py-3 bg-yellow-400 text-black font-semibold rounded-lg shadow-lg hover:bg-yellow-500 hover:scale-105 transition-transform duration-300"
-            >
-              Learn More
-            </button>
+  
             <button
               onClick={() => navigate("/contact")}
               className="px-6 py-3 border border-yellow-400 text-yellow-400 font-semibold rounded-lg hover:bg-yellow-400 hover:text-black transition duration-300"
