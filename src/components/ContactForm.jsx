@@ -82,17 +82,14 @@ function ContactForm() {
           </motion.p>
 
           <motion.div variants={fadeInLeft} className="space-y-5 text-white/90 text-lg">
-            <div className="flex items-center gap-3">
-              <User className="w-6 h-6 text-yellow-400" />
-              <span>Abubakar Abdullah</span>
-            </div>
+          
             <div className="flex items-center gap-3">
               <Phone className="w-6 h-6 text-yellow-400" />
               <span>61-4314574-57</span>
             </div>
             <div className="flex items-center gap-3">
               <Mail className="w-6 h-6 text-yellow-400" />
-              <span>thehdfinternational@gmail.com</span>
+              <span>info@hdfintl.com</span>
             </div>
             <div className="flex items-center gap-3">
               <Instagram className="w-6 h-6 text-yellow-400" />
