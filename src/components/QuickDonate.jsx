@@ -143,10 +143,7 @@ export default function QuickDonate({ showInline = false, user = null }) {
       </div>
 
       {/* ✅ User Info */}
-      <p className="text-center text-blue-300 mb-4">
-        “The believer’s shade on the Day of Resurrection will be his charity.” (Al-Tirmidhi){" "}
-        <span className="font-bold">{user?.displayName || ""}</span>
-      </p>
+
 
       {statusMessage && (
         <p className="text-center text-sm text-white/90 mb-3">
