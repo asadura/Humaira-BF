@@ -195,7 +195,7 @@ export default function Navbar() {
   </h3>
   <div className="space-y-2 text-[15px]">
     <p className="flex items-center gap-2 text-white transition-colors duration-200">
-      <span className="bg-[color:var(--brand-primary)]/15 text-[color:var(--brand-primary)] px-2 py-1 rounded-lg text-md font-medium">
+     <span className="bg-blue-800/15  text-[color:var(--brand-primary)] px-2 py-1 rounded-lg text-md font-medium">
         Phone
       </span>
       +92 305 4638070
@@ -207,7 +207,7 @@ export default function Navbar() {
       <a
         className=" text-white"
       >
-        admin@hdfintl <br />.com
+        info@hdfintl <br />.com
       </a>
     </p>
   </div>
